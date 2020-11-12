@@ -149,8 +149,6 @@ export default defineComponent({
         });
 
         bookingCounts.value = response?.data || null;
-
-        console.log(bookingCounts.value);
         createChart();
       } catch (e) {
         console.error(e);

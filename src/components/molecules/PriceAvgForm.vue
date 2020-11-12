@@ -112,8 +112,6 @@ export default defineComponent({
         });
 
         priceAvg.value = response?.data || null;
-
-        console.log(priceAvg.value);
         createChart();
       } catch (e) {
         console.error(e);

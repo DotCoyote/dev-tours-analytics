@@ -10,3 +10,9 @@ export interface PriceAvg {
   location: Location;
   avg_price: number;
 }
+
+export interface PriceStats {
+  min: number;
+  max: number;
+  avg: number;
+}

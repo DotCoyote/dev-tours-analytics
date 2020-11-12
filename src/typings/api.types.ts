@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios';
 import { Location } from '@/typings/location.types';
-import { BookingStates, PriceAvg } from '@/typings/analytics.types';
+import { BookingStates, PriceAvg, PriceStats } from '@/typings/analytics.types';
 
 export enum APIRoutes {
   GET_LOCATIONS = 'getLocations',
@@ -36,9 +36,5 @@ export interface PriceAvgResponse extends AxiosResponse {
 }
 
 export interface PriceStatsResponse extends AxiosResponse {
-  data: {
-    min: number;
-    max: number;
-    avg: number;
-  }[];
+  data: PriceStats[];
 }

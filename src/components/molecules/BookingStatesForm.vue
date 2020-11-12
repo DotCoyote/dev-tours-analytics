@@ -162,8 +162,6 @@ export default defineComponent({
         });
 
         bookingStates.value = response?.data || null;
-
-        console.log(bookingStates.value);
         createChart();
       } catch (e) {
         console.error(e);
